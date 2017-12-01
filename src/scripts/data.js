@@ -1,3 +1,5 @@
+var myName = ['Alex','Alex','Alex','Alex','Alex'];
+
 var coursesList = [
   {
     provider: "Coursera",
