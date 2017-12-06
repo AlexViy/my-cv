@@ -1,10 +1,8 @@
-var myName = ['Alex','Alex','Alex','Alex','Alex'];
-
 var coursesList = [
   {
     provider: "Coursera",
     provider_link: 'https://www.coursera.org/',
-    logo: "assets/coursera/coursera.png",
+    logo: "http://rhymeswithcroatia.com/wp-content/uploads/2015/07/coursera.png",
     courses: [
       {
         name: "HTML, CSS, and Javascript for Web Developers",
