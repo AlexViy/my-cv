@@ -1,32 +1,34 @@
 window.onload = function() {
-  var indicator = document.getElementsByClassName("indicator")[0];
-  var providerLink = document.getElementsByClassName("provider-link")[0];
-  var coursesLink = document.getElementsByClassName("courses-link")[0];
-  var providerName = document.getElementsByClassName("provider-name")[0];
-  var provider = document.getElementsByClassName("provider")[0];
-  var indicatorContainer = document.getElementsByClassName("indicator-container")[0];
-  var coursesName = document.getElementsByClassName("courses-name")[0];
+  var courses = document.querySelector(".courses");
+  var temp = '';
 
-  function displayData() {
-    // indicator.value = coursesList[0].courses[0].status;
-    providerLink.href = coursesList[0].provider_link;
-    coursesLink.href = coursesList[0].courses[0].course_url;
-    providerName.innerText = coursesList[0].provider;
-    // coursesName.innerText = coursesList[0].courses[0].name;
-   }
-
-   displayData();
-
-   const MAX_PROGRESS_VALUE = 100;
-   var progressBar = document.createElement("progress");
-   var progressBarValue = coursesList[1].courses[0].status;
-   progressBar.setAttribute("value", progressBarValue);
-   progressBar.setAttribute("max", MAX_PROGRESS_VALUE);
-   indicatorContainer.appendChild(progressBar);
-
-   var coursesName = document.createElement("div");
-   coursesName.setAttribute("class", "courses-name")
-   var courseTitle = document.createTextNode(coursesList[0].courses[0].name);
-   coursesName.appendChild(courseTitle);
-   coursesLink.appendChild(coursesName);
+    for (i = 0; i < coursesList.length; i++) {
+      temp +=
+        '<div class="provider">' +
+          '<div class="provider-logo">' +
+            '<img src="'+coursesList[i].logo+'">' +
+          '</div>' +
+            '<a class="provider-link" href="'+coursesList[i].provider_link+'" target="_blank">' +
+              '<h2 class="provider-name">'+coursesList[i].provider+'</h2>'+
+            '</a>' +
+          '<ul>';
+          for (j = 0; j < coursesList[i].courses.length; j++) {
+            temp +=
+              '<li>' +
+                '<div class="courses-logo">'+
+                  '<img src="'+coursesList[i].courses[j].logo+'">' +
+                '</div>'+
+                '<a class="courses-link" href="'+coursesList[i].courses[j].course_url+'" target="_blank">' +
+                  '<div class="courses-name">'+coursesList[i].courses[j].name+'</div>'+
+                '</a>' +
+                '<div class="indicator-container">'+
+                  '<progress value="'+coursesList[i].courses[j].status+'" max="100"></progress>'+
+                '</div>' +
+              '</li>'
+          }
+          temp +=
+            '</ul>' +
+          '</div>';
+      }
+    courses.innerHTML = temp;
 }
