@@ -15,8 +15,7 @@ var runSequence = require('run-sequence');
 
 var path = {
   base: './src',
-  dest: './dist',
-  assets: '/assets',
+  dest: './dist'
 };
 
 // Basic Gulp task syntax
@@ -24,7 +23,7 @@ gulp.task('hello', function() {
   console.log('Hello Alex!');
 })
 
-// Development Tasks 
+// Development Tasks
 // -----------------
 
 // Start Pug
@@ -67,10 +66,10 @@ gulp.task('watch', function() {
   gulp.watch(path.dest + '/**/*.*', browserSync.reload);
 })
 
-// Optimization Tasks 
+// Optimization Tasks
 // ------------------
 
-// Optimizing CSS and JavaScript 
+// Optimizing CSS and JavaScript
 gulp.task('useref', function() {
 
   return gulp.src('*.html')
@@ -80,34 +79,21 @@ gulp.task('useref', function() {
     .pipe(gulp.dest('dist'));
 });
 
-// Optimizing Images 
-gulp.task('images', function() {
-  return gulp.src('./assets/**/*.+(png|jpg|jpeg|gif|svg)')
-    // Caching images that ran through imagemin
-    .pipe(cache(imagemin({
-      interlaced: true,
-    })))
-    .pipe(gulp.dest('dist/images'))
-});
+// Optimizing Images
 
-// Copying fonts 
+// Copying fonts
 gulp.task('fonts', function() {
   return gulp.src('./fonts/**/*')
     .pipe(gulp.dest('dist/fonts'))
 })
 
-// Cleaning 
+// Cleaning
 gulp.task('clean', function() {
   return del.sync(path.dest);
 })
 
 gulp.task('clean:dist', function() {
-  return del.sync(['dist/**/*', '!dist/images', '!dist/assets/**/*']);
-});
-
-gulp.task('assets', function () {
-  return gulp.src(path.base + path.assets + '/**/*.*')
-    .pipe( gulp.dest(path.dest + path.assets) );
+  return del.sync(['dist/**/*', '!dist/images']);
 });
 
 gulp.task('js', function () {
@@ -119,13 +105,13 @@ gulp.task('js', function () {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['clean'], ['pug', 'sass', 'assets', 'js', 'browserSync'], 'watch',
+  runSequence(['clean'], ['pug', 'sass', 'js', 'browserSync'], 'watch',
     callback
   )
 })
 
 gulp.task('build', function(callback) {
-  runSequence(['clean'], ['pug', 'sass', 'assets', 'js'],
+  runSequence(['clean'], ['pug', 'sass', 'js'],
     callback
   )
 })
