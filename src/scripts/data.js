@@ -46,7 +46,7 @@ var coursesList = [
         name: "Intro to JavaScript",
         course_url: "https://www.udacity.com/course/intro-to-javascript--ud803",
         logo: "https://d125fmws0bore1.cloudfront.net/assets/udacity_share-317a7f82552763598a5c91e1550b7cd83663ce02d6d475d703e25a873cd3b574.png",
-        status: "100"
+        status: "31"
       }
     ]
   },
