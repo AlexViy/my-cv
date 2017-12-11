@@ -136,5 +136,37 @@ var coursesList = [
         status: "85"
       }
     ]
-  }
+  },
+  {
+    provider: "Prometheus",
+    provider_link: 'https://prometheus.org.ua/',
+    logo: "http://job.ssm.in.ua/wp-content/uploads/2015/08/prometheus.png",
+    courses: [
+      {
+        name: "Software Testing Fundamentals",
+        course_url: "https://courses.prometheus.org.ua/courses/course-v1:LITS+115+2017_T4/about",
+        logo: "https://courses.prometheus.org.ua/asset-v1:LITS+115+2017_T4+type@asset+block@_0CECDB714CA2EE29B6C9284FE2AF718E3502C6EF60D7C749E9_pimgpsh_fullsize_distr.png",
+        status: "100"
+      }
+    ]
+  },
+  {
+    provider: "SkillUp",
+    provider_link: 'http://skillup.ua/',
+    logo: "https://comers.com.ua/wp-content/uploads/2016/09/logo-skillup-kiev.jpg",
+    courses: [
+      {
+        name: "HTML Fundamentals",
+        course_url: "http://skillup.ua/lp/qa-lviv/?utm_medium=referal&utm_campaign=button&utm_source=site",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png",
+        status: "100"
+      },
+      {
+        name: "SQL Fundamentals",
+        course_url: "http://skillup.ua/lp/qa-lviv/?utm_medium=referal&utm_campaign=button&utm_source=site",
+        logo: "https://powerbicdn.azureedge.net/cvt-deb73394c27483f569564c66c274c50a768118465e62d51875fc55059dce4f1e/pictures/shared/integrations/2x/sql-server@2x.png",
+        status: "100"
+      }
+    ]
+  },
 ];
