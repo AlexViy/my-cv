@@ -170,3 +170,41 @@ var coursesList = [
     ]
   },
 ];
+//
+// var certificates = [
+//   {
+//     provider:
+//     provider_link
+//     certificate_url:
+//     logo:
+//
+//   },
+//   {
+//     provider:
+//     provider_link
+//     certificate_url:
+//     logo:
+//
+//   },
+//   {
+//     provider:
+//     provider_link
+//     certificate_url:
+//     logo:
+//
+//   },
+//   {
+//     provider:
+//     provider_link
+//     certificate_url:
+//     logo:
+//
+//   },
+//   {
+//     provider:
+//     provider_link
+//     certificate_url:
+//     logo:
+//
+//   },
+// ];
