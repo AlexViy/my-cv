@@ -26,5 +26,12 @@
     "gulp-useref": "^3.0.4",
     "run-sequence": "^1.1.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@bower_components/bootstrap": "twbs/bootstrap#4.0.0-beta.2",
+    "@bower_components/jquery": "jquery/jquery#3.2.1",
+    "@bower_components/popper": "FezVrasta/popper.js#latest"
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
+  }
 }
