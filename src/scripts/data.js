@@ -1,3 +1,8 @@
+var profile = [
+  {name: 'Alex'},
+  {photo: "https://lh3.googleusercontent.com/fJMFXTaMQctWoe6gUREUg8gynbFG08gfDtXfMWnmRn26FLIs5D6hYiOLs2wcqAiz8ZMcwPutVrUbMvE7kzcQRlwI9HUO0kjn7evgQ1-A-sEkmAK8_xMJZoCIy3ZHMp8QJKgJEamOl1ZwQMVFUlC5Q70-5b2JxwIiOuu0SBw0mSfBkFQdtZDv6nE7AJg56g0KfYOflQAnJQ-DOckF-1jNlATW4FSdO4_nkTN18DLUvWvW_aLZF6bzNoYhXGYlBI1NM1qJcvKaFRDHkU1lD6Xc2ZaES5R2KYdvojLYShs5VsXXotkV96gTo7DkADO92IiIHslVVG9YRX9CVuYS6XGCAcYgXM1CxD3bsnA9udzmt7Y-E1kYVM02zQEZDhldAUqmioNPt6X3VPwCyhRKxSLKuhgyeEYZhkXgL0jRjiyerO8h8PTSkhVVQFlfLq7nmEKXopEkWCk_mwqahr5gxqCTCgGmaqyIcNoUlw6APYq93nBWHnAUr_na6HqPUvOH43q9b84MQbRMYKIf_cgb6qWIEp15JUy5vIunPwSuot3BHUEiDTuf5XhD-25kisFeGSqGljtMZhNaylqqJbosRp-QOqzmWGHkdif7WyxEsc3k7Uowl_bTvfcNhGIldx-i7VwjVUi06fXsAUHWs72ZCdbgX0AOOgGMtsGjqag=w919-h918-no"},
+  {bio: "BIO My biography should be here..."}
+]
 var coursesList = [
   {
     provider: "Coursera",
@@ -169,4 +174,39 @@ var coursesList = [
       }
     ]
   },
+];
+
+var certificatesList = [
+  {
+    provider: "SoloLearn",
+    logo: "http://www.thedailystar.net/sites/default/files/styles/big_6/public/feature/images/sololearn.jpg?itok=Gqt21bHB",
+    certificates: [
+      {
+        name: "HTML Fundamentals course",
+        url: "https://www.sololearn.com/Certificate/1060-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+      },
+      {
+        name: "CSS Fundamentals course",
+        url: "https://www.sololearn.com/Certificate/1023-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+      },
+      {
+        name: "JavaScript Tutorial Course",
+        url: "https://www.sololearn.com/Certificate/1024-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+      },
+      {
+        name: "SQL Tutorials Course",
+        url: "https://www.sololearn.com/Certificate/1060-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+      }
+    ]
+  },
+  {
+    provider: "Prometheus",
+    logo: "http://job.ssm.in.ua/wp-content/uploads/2015/08/prometheus.png",
+    certificates: [
+      {
+        name: "Software Testing Fundamentals",
+        url: "https://courses.prometheus.org.ua:18090/downloads/de6dfb5263074260b274b42f7a190e9d/Certificate.pdf?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+      }
+    ]
+  }
 ];
