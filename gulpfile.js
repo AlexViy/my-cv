@@ -26,6 +26,12 @@ gulp.task('hello', function() {
 // Development Tasks
 // -----------------
 
+// Transfer FE packages
+gulp.task('fePacks', function(){
+  gulp.src('./node_modules/@bower_components/**')
+      .pipe(gulp.dest(path.dest + '/bower_components'));
+})
+
 // Start Pug
 gulp.task('pug', function(){
   gulp.src(`${path.base}/**/*.pug`)
@@ -105,13 +111,13 @@ gulp.task('js', function () {
 // ---------------
 
 gulp.task('default', function(callback) {
-  runSequence(['clean'], ['pug', 'sass', 'js', 'browserSync'], 'watch',
+  runSequence(['clean'], ['pug', 'sass', 'js', 'fePacks', 'browserSync'], 'watch',
     callback
   )
 })
 
 gulp.task('build', function(callback) {
-  runSequence(['clean'], ['pug', 'sass', 'js'],
+  runSequence(['clean'], ['pug', 'sass', 'js', 'fePacks'],
     callback
   )
 })

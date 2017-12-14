@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@bower_components/bootstrap@twbs/bootstrap#4.0.0-beta.2":
+  version "4.0.0-beta.2"
+  resolved "https://codeload.github.com/twbs/bootstrap/tar.gz/fc94de5b8b5b329a298eeeb76174b146ff17af2d"
+
+"@bower_components/jquery@jquery/jquery#3.2.1":
+  version "3.2.1"
+  resolved "https://codeload.github.com/jquery/jquery/tar.gz/f71eeda0fac4ec1442e631e90ff0703a0fb4ac96"
+
+"@bower_components/popper@FezVrasta/popper.js#latest":
+  version "1.9.9"
+  resolved "https://codeload.github.com/FezVrasta/popper.js/tar.gz/450d36907abef2887adc881460596651a4bcbacd"
+
 "@gulp-sourcemaps/map-sources@1.X":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@gulp-sourcemaps/map-sources/-/map-sources-1.0.0.tgz#890ae7c5d8c877f6d384860215ace9d7ec945bda"
@@ -344,6 +356,10 @@ boom@2.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-2.10.1.tgz#39c8918ceff5799f83f9492a848f625add0c766f"
   dependencies:
     hoek "2.x.x"
+
+bower@^1.8.2:
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/bower/-/bower-1.8.2.tgz#adf53529c8d4af02ef24fb8d5341c1419d33e2f7"
 
 brace-expansion@^1.0.0, brace-expansion@^1.1.7:
   version "1.1.8"
