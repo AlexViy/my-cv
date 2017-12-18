@@ -4,12 +4,12 @@ var coursesAdder = function(target, data) {
 
   for (i = 0; i < data.length; i++) {
     temp +=
-      '<div class="provider">' +
+      '<div class="provider col">' +
         '<div class="provider-logo">' +
           '<img src="'+data[i].logo+'">' +
         '</div>' +
           '<a class="provider-link" href="'+data[i].provider_link+'" target="_blank">' +
-            '<h2 class="provider-name">'+data[i].provider+'</h2>'+
+            '<span class="provider-name">'+data[i].provider+'</span>'+
           '</a>' +
         '<ul>';
         for (j = 0; j < data[i].courses.length; j++) {
