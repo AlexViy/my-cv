@@ -184,18 +184,22 @@ var certificatesList = [
       {
         name: "HTML Fundamentals course",
         url: "https://www.sololearn.com/Certificate/1060-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gold_seal_v2.svg/2000px-Gold_seal_v2.svg.png",
       },
       {
         name: "CSS Fundamentals course",
         url: "https://www.sololearn.com/Certificate/1023-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gold_seal_v2.svg/2000px-Gold_seal_v2.svg.png",
       },
       {
         name: "JavaScript Tutorial Course",
         url: "https://www.sololearn.com/Certificate/1024-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gold_seal_v2.svg/2000px-Gold_seal_v2.svg.png",
       },
       {
         name: "SQL Tutorials Course",
         url: "https://www.sololearn.com/Certificate/1060-3600883/pdf/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gold_seal_v2.svg/2000px-Gold_seal_v2.svg.png",
       }
     ]
   },
@@ -206,6 +210,7 @@ var certificatesList = [
       {
         name: "Software Testing Fundamentals",
         url: "https://courses.prometheus.org.ua:18090/downloads/de6dfb5263074260b274b42f7a190e9d/Certificate.pdf?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BEhYgSizzS0Kd9ipoii5yPg%3D%3D",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Gold_seal_v2.svg/2000px-Gold_seal_v2.svg.png",
       }
     ]
   }
