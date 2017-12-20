@@ -7,7 +7,7 @@ var coursesList = [
   {
     provider: "Coursera",
     provider_link: 'https://www.coursera.org/',
-    logo: "http://rhymeswithcroatia.com/wp-content/uploads/2015/07/coursera.png",
+    logo: "https://images-na.ssl-images-amazon.com/images/I/31dVKrUBBVL.png",
     courses: [
       {
         name: "HTML, CSS, and Javascript for Web Developers",
@@ -45,7 +45,7 @@ var coursesList = [
   {
     provider: "Udacity",
     provider_link: 'https://www.udacity.com/',
-    logo: "https://d125fmws0bore1.cloudfront.net/assets/udacity_share-317a7f82552763598a5c91e1550b7cd83663ce02d6d475d703e25a873cd3b574.png",
+    logo: "https://d9tyu2epg3boq.cloudfront.net/providers/udacity-blue.png",
     courses: [
       {
         name: "Intro to JavaScript",
@@ -89,7 +89,7 @@ var coursesList = [
   {
     provider: "w3schools",
     provider_link: 'https://www.w3schools.com/',
-    logo: "https://vignette.wikia.nocookie.net/howtoprogram/images/c/ce/W3Schools.png/revision/latest?cb=20130601232401",
+    logo: "http://3.bp.blogspot.com/-YcOBKGtGh9c/WILLc7M7UAI/AAAAAAAAADg/bpdmBHiQWd4pOy0gxI1PCckJaDSkNAULwCK4B/s1600/w3-schools-logo.jpg",
     courses: [
       {
         name: "HTML5 Tutorial",

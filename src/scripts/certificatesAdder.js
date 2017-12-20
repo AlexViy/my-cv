@@ -14,10 +14,10 @@ var certificatesAdder = function(target, data) {
               temp +=
               '<li>' +
                 '<div class="certificates-info">' +
-                '<img src="'+data[i].certificates[j].icon+'" class="cert-prov-logo">' +
-                  '<a class="cert-name" href="'+data[i].certificates[j].url+'" target="_blank">' +
-                    data[i].certificates[j].name +
-                  '</a>' +
+                  '<img src="'+data[i].certificates[j].icon+'" class="cert-prov-logo">' +
+                    '<a class="cert-name" href="'+data[i].certificates[j].url+'" target="_blank">' +
+                      data[i].certificates[j].name +
+                    '</a>' +
                 '</div>' +
               '</li>'
               }
