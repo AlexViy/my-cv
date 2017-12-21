@@ -4,8 +4,8 @@ var certificatesAdder = function(target, data) {
 
   for (i = 0; i < data.length; i++) {
     temp +=
-      '<div class="provider">' +
-        '<h2 class="provider-name">' +data[i].provider+'</h2>' +
+      '<div class="provider col">' +
+        '<span class="provider-name">' +data[i].provider+'</span>' +
         '<ul>';
         for (j = 0; j < data[i].certificates.length; j++) {
           temp +=
