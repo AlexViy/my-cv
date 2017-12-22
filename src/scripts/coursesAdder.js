@@ -5,14 +5,13 @@ var coursesAdder = function(target, data) {
   for (i = 0; i < data.length; i++) {
     temp +=
       '<div class="col">' +
-        '<div class="provider">' +
-          '<div class="provider-logo">' +
-            '<img src="'+data[i].logo+'">' +
-          '</div>' +
-            '<a class="provider-link" href="'+data[i].provider_link+'" target="_blank">' +
-              '<span class="provider-name">'+data[i].provider+'</span>'+
-            '</a>' +
-          '<ul>';
+        '<div class="courses-provider">' +
+          '<img src="'+data[i].logo+'">' +
+          '<a class="provider-link" href="'+data[i].provider_link+'" target="_blank">' +
+            '<span class="provider-name">'+data[i].provider+'</span>'+
+          '</a>' +
+        '</div>' +
+        '<ul>';
           for (j = 0; j < data[i].courses.length; j++) {
             temp +=
               '<li>' +
@@ -25,12 +24,12 @@ var coursesAdder = function(target, data) {
                 '<div class="progress" style="height: 2px;">' +
                   '<div class="progress-bar" role="progressbar" style="width: '+data[i].courses[j].status+'%;" aria-valuenow="'+data[i].courses[j].status+'" aria-valuemin="0" aria-valuemax="100"></div>' +
                 '</div>' +
-              '</li>'
-          }
-          temp +=
-            '</ul>' +
-          '</div>' +
-        '</div>';
+              '</li>'         
+        }
+        temp +=
+          '</ul>' +
+        '</div>' +
+      '</div>';
   }
   courses.innerHTML = temp;
 }
