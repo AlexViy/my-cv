@@ -22,8 +22,8 @@ var coursesAdder = function(target, data) {
                 '<a class="courses-link" href="'+data[i].courses[j].course_url+'" target="_blank">' +
                   '<div class="courses-name">'+data[i].courses[j].name+'</div>'+
                 '</a>' +
-                '<div class="indicator-container">'+
-                  '<progress value="'+data[i].courses[j].status+'" max="100"></progress>'+
+                '<div class="progress" style="height: 2px;">' +
+                  '<div class="progress-bar" role="progressbar" style="width: '+data[i].courses[j].status+'%;" aria-valuenow="'+data[i].courses[j].status+'" aria-valuemin="0" aria-valuemax="100"></div>' +
                 '</div>' +
               '</li>'
           }
