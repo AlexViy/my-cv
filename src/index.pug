@@ -12,19 +12,36 @@ html(lang="en")
     script(src="scripts/certificatesAdder.js")
     script(src="scripts/controller.js")
 
-  body    
-
-    .container
+  body(data-spy="scroll" data-target="#navbar" data-offset="100")
+    
+    nav#navbar.navbar.navbar-light.bg-light.sticky-top
+      ul.nav.nav-pills
+        li.nav-item 
+          a.nav-link(href="#avatar") Summary
+        li.nav-item 
+          a.nav-link(href="#contacts") Contacts
+        li.nav-item 
+          a.nav-link(href="#experience") Experience
+        li.nav-item 
+          a.nav-link(href="#education") Education
+        li.nav-item 
+          a.nav-link(href="#courses") Courses
+        li.nav-item 
+          a.nav-link(href="#certificates") Certificates
+        li.nav-item 
+          a.nav-link(href="#interests") Interests
+        
+    .container    
       .row
         .col-12.col-sm-12.col-md-4
-          .avatar
+          .avatar#avatar
             img.img-fluid.rounded(src="https://lh3.googleusercontent.com/fJMFXTaMQctWoe6gUREUg8gynbFG08gfDtXfMWnmRn26FLIs5D6hYiOLs2wcqAiz8ZMcwPutVrUbMvE7kzcQRlwI9HUO0kjn7evgQ1-A-sEkmAK8_xMJZoCIy3ZHMp8QJKgJEamOl1ZwQMVFUlC5Q70-5b2JxwIiOuu0SBw0mSfBkFQdtZDv6nE7AJg56g0KfYOflQAnJQ-DOckF-1jNlATW4FSdO4_nkTN18DLUvWvW_aLZF6bzNoYhXGYlBI1NM1qJcvKaFRDHkU1lD6Xc2ZaES5R2KYdvojLYShs5VsXXotkV96gTo7DkADO92IiIHslVVG9YRX9CVuYS6XGCAcYgXM1CxD3bsnA9udzmt7Y-E1kYVM02zQEZDhldAUqmioNPt6X3VPwCyhRKxSLKuhgyeEYZhkXgL0jRjiyerO8h8PTSkhVVQFlfLq7nmEKXopEkWCk_mwqahr5gxqCTCgGmaqyIcNoUlw6APYq93nBWHnAUr_na6HqPUvOH43q9b84MQbRMYKIf_cgb6qWIEp15JUy5vIunPwSuot3BHUEiDTuf5XhD-25kisFeGSqGljtMZhNaylqqJbosRp-QOqzmWGHkdif7WyxEsc3k7Uowl_bTvfcNhGIldx-i7VwjVUi06fXsAUHWs72ZCdbgX0AOOgGMtsGjqag=w919-h918-no")          
         .col-12.col-sm-12.col-md-8
           h1.name.display-3 Alex
           h3 Summary
           .bio Howard Phillips Lovecraft (/ˈlʌvkræft, -ˌkrɑːft/;[1] August 20, 1890 – March 15, 1937) was an American writer who achieved posthumous fame through his influential works of horror fiction. He was virtually unknown and published only in pulp magazines before he died in poverty, but he is now regarded as one of the most significant 20th-century authors in his genre.
           
-      h3 Contacts:
+      h3#contacts Contacts:
       .row
         .col.col-12.col-sm-6.col-lg-3
           a(href="https://github.com/AlexViy")
@@ -47,38 +64,39 @@ html(lang="en")
               img(src="https://cdn.pixabay.com/photo/2015/12/08/18/39/at-sign-1083508_960_720.png")
               span alexviy@gmail.com
               
-      h3 Experience:
+      h3#experience Experience:
       .row
         .col
           h5 Barista @ !FEST: Lviv Coffe Manufacture
           p dec.2011 - dec.2017
           p gfslkglksjv ls jsl kjdf l;kjg  lk;lk;lk ;jkjhkjh kjhkjh kjnkjhkjh
           
-      h3 Education:
+      h3#education Education:
       .row
         .col
           h5 Bachelor @ Lviv State University Of Life Safety: Fire Safety
           p sep.2005 - may.2009
           p gfslkglksjv ls jsl kjdf l;kjg  lk;lk;lk ;jkjhkjh kjhkjh kjnkjhkjh
           
-      h3 Courses  
+      h3#courses Courses  
       .row.courses
-      h3 Certificates
+        
+      h3#certificates Certificates
       .row.certificates-list
-      h3 Interests
+        
+      h3#interests Interests
       .row.interests
         .col
           ul.interests-list Interests
             li coding
             li woodworking
-            li hiking
-       
+            li hiking     
         
          
 
 
         
                         
-    srcipt(src="./bower_components/jquery/dist/jquery.min.js")
-    srcipt(src="./bower_components/bootstrap/dist/js/bootstrap.min.js")
-    srcipt(src="./bower_components/popper.js/dist/popper.min.js")
+    script(src="./bower_components/jquery/dist/jquery.min.js")
+    script(src="./bower_components/bootstrap/dist/js/bootstrap.min.js")
+    script(src="./bower_components/popper.js/dist/popper.min.js")
