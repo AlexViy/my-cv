@@ -19,9 +19,20 @@ body
   font-family: $font
   position: relative
 
+// adds offset for anchors after click
+a.anchor
+  display: block
+  position: relative
+  top: -48px
+  visibility: hidden
+
 .row
   padding-bottom: 32px
   border-bottom: 1px solid #ddd
+
+// fixes incorrect displaying of pills for bottom page sections
+.row:last-child
+  padding-bottom: 300px
 
 .provider-name
   font-size: $title-small
@@ -112,3 +123,8 @@ body
 
 li
   list-style-type: none
+
+.nav
+
+  li
+    float: left

@@ -4,17 +4,34 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
     title Title
-    link(rel="stylesheet", href="./bower_components/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
     link(rel="stylesheet", href="./css/style.css")
-    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")    
     script(src="scripts/data.js")
     script(src="scripts/coursesAdder.js")
     script(src="scripts/certificatesAdder.js")
     script(src="scripts/controller.js")
 
-  body    
-
+  body(data-spy="scroll" data-target="#navbar" data-offset="48")
+    
+    nav#navbar.navbar.navbar-light.bg-light.sticky-top
+      ul.nav.nav-pills
+        li.nav-item 
+          a.nav-link(href="#avatar") Summary
+        li.nav-item 
+          a.nav-link(href="#contacts") Contacts
+        li.nav-item 
+          a.nav-link(href="#experience") Experience
+        li.nav-item 
+          a.nav-link(href="#education") Education
+        li.nav-item 
+          a.nav-link(href="#courses") Courses
+        li.nav-item 
+          a.nav-link(href="#certificates") Certificates
+        li.nav-item 
+          a.nav-link(href="#interests") Interests
+        
     .container
+      a.anchor#avatar
       .row
         .col-12.col-sm-12.col-md-4
           .avatar
@@ -23,7 +40,8 @@ html(lang="en")
           h1.name.display-3 Alex
           h3 Summary
           .bio Howard Phillips Lovecraft (/ˈlʌvkræft, -ˌkrɑːft/;[1] August 20, 1890 – March 15, 1937) was an American writer who achieved posthumous fame through his influential works of horror fiction. He was virtually unknown and published only in pulp magazines before he died in poverty, but he is now regarded as one of the most significant 20th-century authors in his genre.
-          
+      
+      a.anchor#contacts   
       h3 Contacts:
       .row
         .col.col-12.col-sm-6.col-lg-3
@@ -46,39 +64,44 @@ html(lang="en")
             .contact
               img(src="https://cdn.pixabay.com/photo/2015/12/08/18/39/at-sign-1083508_960_720.png")
               span alexviy@gmail.com
-              
+      
+      a.anchor#experience      
       h3 Experience:
       .row
         .col
           h5 Barista @ !FEST: Lviv Coffe Manufacture
           p dec.2011 - dec.2017
           p gfslkglksjv ls jsl kjdf l;kjg  lk;lk;lk ;jkjhkjh kjhkjh kjnkjhkjh
-          
+      
+      a.anchor#education    
       h3 Education:
       .row
         .col
           h5 Bachelor @ Lviv State University Of Life Safety: Fire Safety
           p sep.2005 - may.2009
           p gfslkglksjv ls jsl kjdf l;kjg  lk;lk;lk ;jkjhkjh kjhkjh kjnkjhkjh
-          
+      
+      a.anchor#courses    
       h3 Courses  
       .row.courses
+      
+      a.anchor#certificates  
       h3 Certificates
       .row.certificates-list
+      
+      a.anchor#interests  
       h3 Interests
       .row.interests
         .col
           ul.interests-list Interests
             li coding
             li woodworking
-            li hiking
-       
-        
-         
+            li hiking     
+                 
 
 
-        
-                        
-    srcipt(src="./bower_components/jquery/dist/jquery.min.js")
-    srcipt(src="./bower_components/bootstrap/dist/js/bootstrap.min.js")
-    srcipt(src="./bower_components/popper.js/dist/popper.min.js")
+
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")

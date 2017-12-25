@@ -10,7 +10,6 @@
   "author": "Multicora",
   "license": "ISC",
   "devDependencies": {
-    "bower": "^1.8.2",
     "browser-sync": "^2.7.12",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
@@ -27,9 +26,6 @@
     "run-sequence": "^1.1.2"
   },
   "dependencies": {
-    "@bower_components/bootstrap": "twbs/bootstrap#4.0.0-beta.2",
-    "@bower_components/jquery": "jquery/jquery#3.2.1",
-    "@bower_components/popper": "FezVrasta/popper.js#latest"
   },
   "engines": {
     "yarn": ">= 1.0.0"
