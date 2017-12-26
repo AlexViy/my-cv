@@ -7,7 +7,7 @@ var certificatesAdder = function(target, data) {
       '<div class="col">' +
         '<a class="provider-link" href="'+data[i].provider_link+'" target="_blank">' +
           '<div class="cert-provider">' +
-            '<img src="'+data[i].logo+'">' +
+            '<img class="provider-logo" src="'+data[i].logo+'">' +
             '<span class="provider-name">' +data[i].provider+'</span>' +
           '</div>' +
         '</a>' +
@@ -17,7 +17,7 @@ var certificatesAdder = function(target, data) {
             '<li>' +
               '<a href="'+data[i].certificates[j].url+'" target="_blank">' +
                 '<div class="cert-name">' +
-                  '<img src="'+data[i].certificates[j].icon+'" class="cert-prov-logo">' +
+                  '<img class="cert-icon" src="'+data[i].certificates[j].icon+'" class="cert-prov-logo">' +
                     '<span class="cert-course-name">'+data[i].certificates[j].name+'</span>' +
                 '</div>' +
               '</a>' +
