@@ -10,6 +10,7 @@ html(lang="en")
     script(src="scripts/coursesAdder.js")
     script(src="scripts/certificatesAdder.js")
     script(src="scripts/controller.js")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js")
 
   body(data-spy="scroll" data-target="#navbar" data-offset="48")
     
@@ -29,7 +30,7 @@ html(lang="en")
           a.nav-link(href="#certificates") Certificates
         li.nav-item 
           a.nav-link(href="#interests") Interests
-        
+  
     .container
       a.anchor#avatar
       .row
@@ -46,23 +47,27 @@ html(lang="en")
       .row
         .col.col-12.col-sm-6.col-lg-3
           a(href="https://github.com/AlexViy")
-            .contact 
-              img(src="https://image.freepik.com/free-icon/github-logo-in-a-rounded-square_318-40761.jpg")
+            .contact
+              .icon
+                i.fab.fa-github.fa-lg
               span alexviy
         .col.col-12.col-sm-6.col-lg-3
           a(href="https://www.linkedin.com/in/alexander-bayrak/")
             .contact
-              img(src="http://psiint.com/wp-content/uploads/2017/03/linkedin-logo-copy.png")
+              .icon
+                i.fab.fa-linkedin-in.fa-lg
               span alexander-bayrak
         .col.col-12.col-sm-6.col-lg-3
           a(href="tel:+380633120180")
             .contact
-              img(src="https://www.ab.bluecross.ca/images/icons/png/phone-darkblue.png")
+              .icon
+                i.fas.fa-phone.fa-lg
               span +380633120180
         .col.col-12.col-sm-6.col-lg-3
           a(href="mailto:alexviy@gmail.com")
             .contact
-              img(src="https://cdn.pixabay.com/photo/2015/12/08/18/39/at-sign-1083508_960_720.png")
+              .icon
+                i.fas.fa-envelope.fa-lg
               span alexviy@gmail.com
       
       a.anchor#experience      

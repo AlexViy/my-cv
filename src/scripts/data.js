@@ -50,7 +50,7 @@ var coursesList = [
       {
         name: "Intro to JavaScript",
         course_url: "https://www.udacity.com/course/intro-to-javascript--ud803",
-        logo: "https://d125fmws0bore1.cloudfront.net/assets/udacity_share-317a7f82552763598a5c91e1550b7cd83663ce02d6d475d703e25a873cd3b574.png",
+        logo: "https://vignette.wikia.nocookie.net/dreadnought/images/f/fd/Js-logo.png/revision/latest?cb=20160509122720",
         status: "31"
       }
     ]
@@ -63,25 +63,25 @@ var coursesList = [
       {
         name: "HTML5 and CSS",
         course_url: "https://www.freecodecamp.org/map-aside#nested-collapseHTML5andCSS",
-        logo: "https://i.ytimg.com/vi/__IJKMzilQo/hqdefault.jpg",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyWPtfCYCBhWGHlW-98CTwNCzVTgdz1KfuhrXbJ1ck9ifDHIz4",
         status: "100"
       },
       {
         name: "Responsive Design With Bootstrap",
         course_url: "https://www.freecodecamp.org/map-aside#nested-collapseResponsiveDesignwithBootstrap",
-        logo: "https://i.ytimg.com/vi/2QCPy522Afw/maxresdefault.jpg",
+        logo: "https://www.morpht.com/sites/morpht/files/bootstrap_solid.png",
         status: "100"
       },
       {
         name: "jQuery",
         course_url: "https://www.freecodecamp.org/map-aside#nested-collapsejQuery",
-        logo: "https://i.ytimg.com/vi/o3pZhyLfRY0/maxresdefault.jpg",
+        logo: "http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif",
         status: "100"
       },
       {
         name: "Basic JavaScript",
         course_url: "https://www.freecodecamp.org/map-aside#nested-collapseBasicJavaScript",
-        logo: "https://i.ytimg.com/vi/DM9o0eZCA8A/maxresdefault.jpg",
+        logo: "https://vignette.wikia.nocookie.net/dreadnought/images/f/fd/Js-logo.png/revision/latest?cb=20160509122720",
         status: "85"
       }
     ]
@@ -89,12 +89,12 @@ var coursesList = [
   {
     provider: "w3schools",
     provider_link: 'https://www.w3schools.com/',
-    logo: "http://3.bp.blogspot.com/-YcOBKGtGh9c/WILLc7M7UAI/AAAAAAAAADg/bpdmBHiQWd4pOy0gxI1PCckJaDSkNAULwCK4B/s1600/w3-schools-logo.jpg",
+    logo: "https://uappexplorer.com/api/icon/1c93d2a3dda3dc8a564a212a1ac6b379/w3schools.panders.png",
     courses: [
       {
         name: "HTML5 Tutorial",
         course_url: "https://www.w3schools.com/html/default.asp",
-        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png",
         status: "100"
       }
     ]
@@ -107,37 +107,37 @@ var coursesList = [
       {
         name: "HTML Fundamentals",
         course_url: "https://www.sololearn.com/Course/HTML/",
-        logo: "https://www.sololearn.com/Icons/Courses/1014.png",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2000px-HTML5_logo_and_wordmark.svg.png",
         status: "100"
       },
       {
         name: "CSS Fundamentals",
         course_url: "https://www.sololearn.com/Course/CSS/",
-        logo: "https://www.sololearn.com/Icons/Courses/1023.png",
+        logo: "https://cdn.worldvectorlogo.com/logos/css3.svg",
         status: "100"
       },
       {
         name: "JavaScript Tutorial",
         course_url: "https://www.sololearn.com/Course/JavaScript/",
-        logo: "https://www.sololearn.com/Icons/Courses/1024.png",
+        logo: "https://vignette.wikia.nocookie.net/dreadnought/images/f/fd/Js-logo.png/revision/latest?cb=20160509122720",
         status: "100"
       },
       {
         name: "jQuery Tutorial",
         course_url: "https://www.sololearn.com/Course/jQuery/",
-        logo: "https://www.sololearn.com/Icons/Courses/1082.png",
+        logo: "http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif",
         status: "100"
       },
       {
         name: "Python 3 Tutorial",
         course_url: "https://www.sololearn.com/Course/Python/",
-        logo: "https://www.sololearn.com/Icons/Courses/1073.png",
+        logo: "http://languageinstituteoftheamericas.com/wp-content/uploads/2016/11/python.png",
         status: "25"
       },
       {
         name: "SQL Fundamentals",
         course_url: "https://www.sololearn.com/Course/SQL/",
-        logo: "https://www.sololearn.com/Icons/Courses/1060.png",
+        logo: "https://powerbicdn.azureedge.net/cvt-deb73394c27483f569564c66c274c50a768118465e62d51875fc55059dce4f1e/pictures/shared/integrations/2x/sql-server@2x.png",
         status: "85"
       }
     ]
@@ -150,7 +150,7 @@ var coursesList = [
       {
         name: "Software Testing Fundamentals",
         course_url: "https://courses.prometheus.org.ua/courses/course-v1:LITS+115+2017_T4/about",
-        logo: "https://courses.prometheus.org.ua/asset-v1:LITS+115+2017_T4+type@asset+block@_0CECDB714CA2EE29B6C9284FE2AF718E3502C6EF60D7C749E9_pimgpsh_fullsize_distr.png",
+        logo: "https://stephenchukumba.files.wordpress.com/2015/07/qa.gif",
         status: "100"
       }
     ]
@@ -158,7 +158,7 @@ var coursesList = [
   {
     provider: "SkillUp",
     provider_link: 'http://skillup.ua/',
-    logo: "https://comers.com.ua/wp-content/uploads/2016/09/logo-skillup-kiev.jpg",
+    logo: "https://s.dou.ua/CACHE/images/img/static/companies/SkillUP-logo_315-153_V1.0/c2c6d5b0f07cf152a5da980a402559a9.jpg",
     courses: [
       {
         name: "HTML Fundamentals",

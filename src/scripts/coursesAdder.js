@@ -7,7 +7,7 @@ var coursesAdder = function(target, data) {
       '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
         '<a class="provider-link" href="'+data[i].provider_link+'" target="_blank">' +
           '<div class="courses-provider">' +
-            '<img src="'+data[i].logo+'">' +
+            '<img class="provider-logo" src="'+data[i].logo+'">' +
               '<span class="provider-name">'+data[i].provider+'</span>'+
         '</a>' +
       '</div>' +
