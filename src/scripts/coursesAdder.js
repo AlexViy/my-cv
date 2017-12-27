@@ -39,11 +39,12 @@ var coursesAdder = function(target1, target2, data) {
 
       var emptyDiv = document.createElement('div');
       emptyDiv.innerHTML = temp;
-      if(temp.indexOf('aria-valuenow="100"')) {
-        courses
-
+      if(temp.indexOf("100") !== -1) {
+        courses.appendChild(emptyDiv);
+      } else {
+        currLearn.appendChild(emptyDiv);
       }
-      currLearn.appendChild(emptyDiv);
+
   }
 
 }
