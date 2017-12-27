@@ -9,13 +9,17 @@ html(lang="en")
     script(src="scripts/data.js")
     script(src="scripts/coursesAdder.js")
     script(src="scripts/certificatesAdder.js")
+    script(src="scripts/navHider.js)
     script(src="scripts/controller.js")
     script(defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js")
 
   body(data-spy="scroll" data-target="#navbar" data-offset="48")
     
-    nav#navbar.navbar.navbar-light.bg-light.sticky-top
-      ul.nav.nav-pills
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+    button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbar" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse#navbar
+      ul.nav.navbar-nav.nav-pills
         li.nav-item 
           a.nav-link(href="#avatar") Summary
         li.nav-item 
