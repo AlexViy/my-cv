@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  coursesAdder(".courses", coursesList);
+  coursesAdder(".courses", ".currently-learning", coursesList);
   certificatesAdder(".certificates-list", certificatesList);
     console.log(profile.photo)
  }
