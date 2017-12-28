@@ -1,35 +1,66 @@
 var coursesAdder = function(target, data) {
-  var courses = document.querySelector(target);
-  var temp = '';
+  var coursesDiv = document.querySelector(target);
+  var complete = true;
+
+  if (target == '.currently-learning') {
+    complete = false;
+  }
+
 
   for (i = 0; i < data.length; i++) {
+    var temp = '';
     temp +=
-      '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
-        '<a class="provider-link" href="'+data[i].provider_link+'" target="_blank">' +
-          '<div class="courses-provider">' +
-            '<img class="provider-logo" src="'+data[i].logo+'">' +
-              '<span class="provider-name">'+data[i].provider+'</span>'+
-        '</a>' +
+      '<a class="provider-link" href="' + data[i].provider_link +
+      '" target="_blank">' +
+      '<div class="courses-provider">' +
+      '<img class="provider-logo" src="' + data[i].logo + '">' +
+      '<span class="provider-name">' + data[i].provider + '</span>' +
       '</div>' +
-        '<ul>';
-          for (j = 0; j < data[i].courses.length; j++) {
-            temp +=
-              '<li>' +
-              '<a class="courses-link" href="'+data[i].courses[j].course_url+'" target="_blank">' +
-                '<div class="courses-info">'+
-                  '<img src="'+data[i].courses[j].logo+'">' +
-                  '<span class="courses-name">'+data[i].courses[j].name+'</span>'+
-                '</div>'+
-              '</a>' +
-              '<div class="progress" style="height: 2px;">' +
-                '<div class="progress-bar" role="progressbar" style="width: '+data[i].courses[j].status+'%;" aria-valuenow="'+data[i].courses[j].status+'" aria-valuemin="0" aria-valuemax="100"></div>' +
-              '</div>' +
-            '</li>'
+      '</a>' +
+      '<ul>';
+
+    for (j = 0; j < data[i].courses.length; j++) {
+      if (complete == false) {
+        if (data[i].courses[j].status !== '100') {
+          temp +=
+            '<li>' +
+            '<a class="courses-link" href="' + data[i].courses[j].course_url +
+            '" target="_blank">' +
+            '<div class="courses-info">' +
+            '<img src="' + data[i].courses[j].logo + '">' +
+            '<span class="courses-name">' + data[i].courses[j].name +
+            '</span></div></a>' +
+            '<div class="progress" style="height: 6px;">' +
+            '<div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"' +
+            ' style="width: ' + data[i].courses[j].status + '%;" ' +
+            'aria-valuenow="' + data[i].courses[j].status +
+            '" aria-valuemin="0" aria-valuemax="100"></div>' +
+            '</div></li>';
         }
-        temp +=
-          '</ul>' +
-        '</div>' +
-      '</div>';
+
+      } else {
+        if (data[i].courses[j].status == '100') {
+          temp +=
+            '<li>' +
+            '<a class="courses-link" href="' + data[i].courses[j].course_url +
+            '" target="_blank">' +
+            '<div class="courses-info">' +
+            '<img src="' + data[i].courses[j].logo + '">' +
+            '<span class="courses-name">' + data[i].courses[j].name +
+            '</span></div></a></li>';
+        }
+      }
+    }
+
+    temp += '</ul></div>';
+
+    var emptyDiv = document.createElement('div');
+    emptyDiv.className += "col-12 col-sm-6 col-lg-4 col-xl-3";
+    emptyDiv.innerHTML = temp;
+    if (temp.indexOf('courses-info') !== -1) {
+      coursesDiv.appendChild(emptyDiv);
+    }
+
   }
-  courses.innerHTML = temp;
+
 }
