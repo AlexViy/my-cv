@@ -3,5 +3,7 @@ var navHider = function () {
   var collapse = document.querySelector('.navbar-collapse');
 
   collapse.addEventListener('click', function(){
-    togg.click();
+        if (window.innerWidth < 992) {
+          togg.click();
+        }
   })}
