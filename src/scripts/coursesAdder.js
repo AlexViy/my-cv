@@ -1,15 +1,13 @@
-var coursesAdder = function(target, data) {
-  var coursesDiv = document.querySelector(target);
+var coursesAdder = function(targetDiv, data) {
   var complete = true;
 
-  if (target == '.currently-learning') {
+  if (targetDiv == '.currently-learning') {
     complete = false;
   }
 
 
   for (i = 0; i < data.length; i++) {
-    var temp = '';
-    temp +=
+    var temp =
       '<a class="provider-link" href="' + data[i].provider_link +
       '" target="_blank">' +
       '<div class="courses-provider">' +
@@ -23,6 +21,7 @@ var coursesAdder = function(target, data) {
       if (complete == false) {
         if (data[i].courses[j].status !== '100') {
           temp +=
+            '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
             '<li>' +
             '<a class="courses-link" href="' + data[i].courses[j].course_url +
             '" target="_blank">' +
@@ -47,18 +46,20 @@ var coursesAdder = function(target, data) {
             '<div class="courses-info">' +
             '<img src="' + data[i].courses[j].logo + '">' +
             '<span class="courses-name">' + data[i].courses[j].name +
-            '</span></div></a></li>';
+            '</span></div></a></li></div>';
         }
       }
     }
 
     temp += '</ul></div>';
 
-    var emptyDiv = document.createElement('div');
-    emptyDiv.className += "col-12 col-sm-6 col-lg-4 col-xl-3";
-    emptyDiv.innerHTML = temp;
+    // var emptyDiv = document.createElement('div');
+
+    // emptyDiv.className += "col-12 col-sm-6 col-lg-4 col-xl-3";
+    // emptyDiv.innerHTML = temp;
     if (temp.indexOf('courses-info') !== -1) {
-      coursesDiv.appendChild(emptyDiv);
+      // $(targetDiv).append(emptyDiv);
+      $(targetDiv).append(temp);
     }
 
   }
