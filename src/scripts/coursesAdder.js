@@ -1,15 +1,14 @@
-var coursesAdder = function(target, data) {
-  var coursesDiv = document.querySelector(target);
+var coursesAdder = function(targetDiv, data) {
   var complete = true;
 
-  if (target == '.currently-learning') {
+  if (targetDiv == '.currently-learning') {
     complete = false;
   }
 
 
   for (i = 0; i < data.length; i++) {
-    var temp = '';
-    temp +=
+    var temp =
+      '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
       '<a class="provider-link" href="' + data[i].provider_link +
       '" target="_blank">' +
       '<div class="courses-provider">' +
@@ -53,12 +52,8 @@ var coursesAdder = function(target, data) {
     }
 
     temp += '</ul></div>';
-
-    var emptyDiv = document.createElement('div');
-    emptyDiv.className += "col-12 col-sm-6 col-lg-4 col-xl-3";
-    emptyDiv.innerHTML = temp;
     if (temp.indexOf('courses-info') !== -1) {
-      coursesDiv.appendChild(emptyDiv);
+      $(targetDiv).append(temp);
     }
 
   }

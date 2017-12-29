@@ -1,5 +1,4 @@
 var certificatesAdder = function(target, data) {
-  var certificates = document.querySelector(target);
   var temp = '';
 
   for (i = 0; i < data.length; i++) {
@@ -25,5 +24,5 @@ var certificatesAdder = function(target, data) {
           }
   temp += '</ul></div></div>';
   }
-  certificates.innerHTML = temp;
+  $(target).html(temp);
 }
