@@ -5,7 +5,6 @@ var coursesAdder = function(targetDiv, data) {
     complete = false;
   }
 
-
   for (i = 0; i < data.length; i++) {
     var temp =
       '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
