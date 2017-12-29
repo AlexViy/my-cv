@@ -8,6 +8,7 @@ var coursesAdder = function(targetDiv, data) {
 
   for (i = 0; i < data.length; i++) {
     var temp =
+      '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
       '<a class="provider-link" href="' + data[i].provider_link +
       '" target="_blank">' +
       '<div class="courses-provider">' +
@@ -21,7 +22,6 @@ var coursesAdder = function(targetDiv, data) {
       if (complete == false) {
         if (data[i].courses[j].status !== '100') {
           temp +=
-            '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
             '<li>' +
             '<a class="courses-link" href="' + data[i].courses[j].course_url +
             '" target="_blank">' +
@@ -46,19 +46,13 @@ var coursesAdder = function(targetDiv, data) {
             '<div class="courses-info">' +
             '<img src="' + data[i].courses[j].logo + '">' +
             '<span class="courses-name">' + data[i].courses[j].name +
-            '</span></div></a></li></div>';
+            '</span></div></a></li>';
         }
       }
     }
 
     temp += '</ul></div>';
-
-    // var emptyDiv = document.createElement('div');
-
-    // emptyDiv.className += "col-12 col-sm-6 col-lg-4 col-xl-3";
-    // emptyDiv.innerHTML = temp;
     if (temp.indexOf('courses-info') !== -1) {
-      // $(targetDiv).append(emptyDiv);
       $(targetDiv).append(temp);
     }
 
