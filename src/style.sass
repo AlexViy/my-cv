@@ -7,22 +7,129 @@
   margin: 0
 
 h1, h2, h3, h4, h5, h6
-  font-weight: 300
   -webkit-font-smoothing: auto
+h3
+  padding: 32px 0 16px
 
 body
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: none
   text-rendering: geometricPrecision
   font-family: $font
+  position: relative
+
+// adds offset for anchors after click
+a.anchor
+  display: block
+  position: relative
+  top: -48px
+  visibility: hidden
+
+.row
+  padding-bottom: 32px
+  border-bottom: 1px solid #ddd
+
+// fixes incorrect displaying of pills for bottom page sections
+.row:last-child
+  padding-bottom: 300px
+
+.provider-name
+  font-size: $title-small
+  margin-left: 16px
+
+.container
+  padding-top: 128px
+
+
+.bio
+  margin-left: 16px
+
+.contact
+  height: 48px
+
+  .icon
+    width: 32px
+    display: inline-block
+    text-align: center
+
+  span
+    margin-left: 16px
+
+.courses-provider
+  height: 30px
+  margin-bottom: 32px
+
+  .provider-logo
+    height: 100%
+    border-radius: 50%
 
 .courses
-	border: 2px solid blue
-	display: flex
-  flex-direction: row
+  border-bottom: none
+
+.progress
+  margin-top: 5px
 
 .provider
-	border: 2px solid red
+  li
+    margin-bottom: 16px
 
-ul
-  border: 1px solid
+  img
+    height: 100%
+
+.courses-info
+  height: 30px
+
+  img
+    height: 100%
+
+.courses-info
+  height: 30px
+  margin-top: 16px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+  .courses-name
+    margin-left: 16px
+
+  img
+    height: 100%
+
+.certificates-info
+  height: 30px
+
+  img
+    height: 100%
+
+.cert-provider
+  height: 30px
+  margin-bottom: 32px
+
+  .provider-logo
+    height: 100%
+    border-radius: 50%
+
+.cert-name
+  margin: 16px 0 0
+  height: 30px
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
+
+  .cert-icon
+    height: 100%
+
+.cert-course-name
+  margin-left: 16px
+
+li
+  list-style-type: none
+
+.nav-item .nav-link.active
+  background: gray
+
+h5.currently-heading
+  margin-top: 24px
+
+h5.completed-heading, h5.currently-heading
+  margin-bottom: 24px

@@ -2,86 +2,123 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    meta(name="viewport" content = "width=device-width")
-    title Title
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title Alexander_Bayrak-CV
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous")
     link(rel="stylesheet", href="./css/style.css")
-    script(src="scripts/jquery-3.2.1.min.js")
-  body
-    .name Alex
-    img.avatar(src=""  width="100" height="100")
-    .bio BIO sdd sd lkjs ldk dlskj lkj dskjh lkdj sflk sldfj
-    .skills Skills
+    script(src="scripts/data.js")
+    script(defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js")
+
+  body(data-spy="scroll" data-target="#navbar" data-offset="48")
     
-    h3 Courses
-    .courses
-      .provider
-        p Sololearn
-        ul
-          li
-            span.course-name HTML
-            progress(value="60" max="100")
-          li
-            span.course-name CSS
-            progress(value="50" max="100")
-          li
-            span.course-name JS
-            progress(value="22" max="100")
-          li
-            span.course-name jQuery
-            progress(value="22" max="100")
-          li
-            span.course-name SQL
-            progress(value="75" max="100")
-          li
-            span.course-name Python
-            progress(value="22" max="100")
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbar" aria-controls="#navbar" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      .collapse.navbar-collapse#navbar
+        ul.nav.navbar-nav.nav-pills.nav-fill
+          li.nav-item 
+            a.nav-link(href="#avatar") Summary
+          li.nav-item 
+            a.nav-link(href="#contacts") Contacts
+          li.nav-item 
+            a.nav-link(href="#experience") Experience
+          li.nav-item 
+            a.nav-link(href="#education") Education
+          li.nav-item 
+            a.nav-link(href="#courses") Courses
+          li.nav-item 
+            a.nav-link(href="#certificates") Certificates
+          li.nav-item 
+            a.nav-link(href="#interests") Interests
+  
+    .container
+      a.anchor#avatar
+      .row
+        .col-12.col-sm-12.col-md-4
+          .avatar
+            img.img-fluid.rounded(src="https://lh3.googleusercontent.com/fJMFXTaMQctWoe6gUREUg8gynbFG08gfDtXfMWnmRn26FLIs5D6hYiOLs2wcqAiz8ZMcwPutVrUbMvE7kzcQRlwI9HUO0kjn7evgQ1-A-sEkmAK8_xMJZoCIy3ZHMp8QJKgJEamOl1ZwQMVFUlC5Q70-5b2JxwIiOuu0SBw0mSfBkFQdtZDv6nE7AJg56g0KfYOflQAnJQ-DOckF-1jNlATW4FSdO4_nkTN18DLUvWvW_aLZF6bzNoYhXGYlBI1NM1qJcvKaFRDHkU1lD6Xc2ZaES5R2KYdvojLYShs5VsXXotkV96gTo7DkADO92IiIHslVVG9YRX9CVuYS6XGCAcYgXM1CxD3bsnA9udzmt7Y-E1kYVM02zQEZDhldAUqmioNPt6X3VPwCyhRKxSLKuhgyeEYZhkXgL0jRjiyerO8h8PTSkhVVQFlfLq7nmEKXopEkWCk_mwqahr5gxqCTCgGmaqyIcNoUlw6APYq93nBWHnAUr_na6HqPUvOH43q9b84MQbRMYKIf_cgb6qWIEp15JUy5vIunPwSuot3BHUEiDTuf5XhD-25kisFeGSqGljtMZhNaylqqJbosRp-QOqzmWGHkdif7WyxEsc3k7Uowl_bTvfcNhGIldx-i7VwjVUi06fXsAUHWs72ZCdbgX0AOOgGMtsGjqag=w919-h918-no")          
+        .col-12.col-sm-12.col-md-8
+          h1.name.display-4.text-center Alexander Bayrak
+          h3 Summary
+          .bio.text-justify Some time ago I’ve discovered that coding is oddly satisfying process and real brain mover. I’ve passed a lot of courses and learned a ton of new things. So now I’m eager to test my new abilities and make some use of it. I’m about to start my career as a professional developer.
+      
+      a.anchor#contacts   
+      h3 Contacts:
+      .row
+        .col.col-12.col-sm-6.col-lg-3
+          a(href="https://github.com/AlexViy")
+            .contact
+              .icon
+                i.fab.fa-github.fa-lg
+              span alexviy
+        .col.col-12.col-sm-6.col-lg-3
+          a(href="https://www.linkedin.com/in/alexander-bayrak/")
+            .contact
+              .icon
+                i.fab.fa-linkedin-in.fa-lg
+              span alexander-bayrak
+        .col.col-12.col-sm-6.col-lg-3
+          a(href="tel:+380633120180")
+            .contact
+              .icon
+                i.fas.fa-phone.fa-lg
+              span +380633120180
+        .col.col-12.col-sm-6.col-lg-3
+          a(href="mailto:alexviy@gmail.com")
+            .contact
+              .icon
+                i.fas.fa-envelope.fa-lg
+              span alexviy@gmail.com
+      
+      a.anchor#experience      
+      h3 Experience:
+      .row
+        .col.col-12.col-sm-6
+          h5.font-italic Barista @ !FEST: Lviv Coffe Manufacture
+          p Dec 2011 - Dec 2017
+          p.text-justify Working on this position I discovered for myself what is the true espresso. And of course, cute latteart =)
+        .col.col-12.col-sm-6
+          h5.font-italic Assistant Manager @ !FEST: Lviv Coffe Manufacture
+          p May 2012 - Oct 2015
+          p.text-justify During this time I had a great experience to manage a lot of processes in restaurant from kitchen to customer service.
+      
+      a.anchor#education    
+      h3 Education:
+      .row
+        .col
+          h5.font-italic Bachelor @ Lviv State University Of Life Safety: Fire Safety
+          p Sep 2005 - May 2009
+      
+      a.anchor#courses    
+      h3 Courses
+      h5.completed-heading Completed
+      .row.courses
+        
+      h5.currently-heading Currently learning
+      .row.currently-learning
+      
+      a.anchor#certificates  
+      h3 Certificates
+      .row.certificates-list
+      
+      a.anchor#interests  
+      h3 Interests
+      .row.interests
+        .col
+          ul.interests-list
+            li Coding
+            li Woodworking
+            li Hiking
 
-      .provider
-        p Sololearn
-        ul
-          li
-            span.course-name HTML
-            progress(value="22" max="100")
-          li
-            span.course-name CSS
-            progress(value="22" max="100")
-          li
-            span.course-name JS
-            progress(value="22" max="100")
-          li
-            span.course-name jQuery
-            progress(value="22" max="100")
-          li
-            span.course-name SQL
-            progress(value="75" max="100")
-          li
-            span.course-name Python
-            progress(value="22" max="100")
+                 
 
-      .provider
-        p Sololearn
-        ul
-          li
-            span.course-name HTML
-            progress(value="22" max="100")
-          li
-            span.course-name CSS
-            progress(value="22" max="100")
-          li
-            span.course-name JS
-            progress(value="22" max="100")
-          li
-            span.course-name jQuery
-            progress(value="22" max="100")
-          li
-            span.course-name SQL
-            progress(value="75" max="100")
-          li
-            span.course-name Python
-            progress(value="22" max="100")
-    .certificates Certificates
-    .social Social
-    .interests Interests
-    .education Education
-    .experience Experience
-    .contacts Contacts
+
+
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous")
+    script(src="scripts/coursesAdder.js")
+    script(src="scripts/certificatesAdder.js")
+    script(src="scripts/navHider.js")
+    script(src="scripts/controller.js")

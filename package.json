@@ -26,5 +26,8 @@
     "run-sequence": "^1.1.2"
   },
   "dependencies": {
+  },
+  "engines": {
+    "yarn": ">= 1.0.0"
   }
 }
